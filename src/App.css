@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Changed font for a modern look */
+  background: linear-gradient(135deg, #f0f2f5, #e0e6ed); /* Lighter, more subtle gradient */
+  color: #333;
+}
+
+/* Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: #1a202c; /* Darker, more sophisticated header background */
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex; /* Flexbox for alignment */
+  align-items: center;
+  justify-content: space-between; /* Space out if more elements are added */
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px; /* Slightly larger logo */
+  font-weight: 700; /* Bolder */
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px; /* Increased padding */
+}

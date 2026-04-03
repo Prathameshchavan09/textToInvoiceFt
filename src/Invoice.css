@@ -1,0 +1,152 @@
+.invoice-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.invoice-card {
+  background: #ffffff;
+  padding: 40px; /* Increased padding */
+  border-radius: 12px; /* Slightly softer corners */
+  width: 100%;
+  max-width: 550px; /* Slightly wider card */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Refined shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+.invoice-card:hover {
+  transform: translateY(-5px); /* More pronounced lift on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Title */
+.invoice-card .card-title {
+  margin: 0 0 10px 0; /* Adjusted margin */
+  font-size: 28px; /* Larger title */
+  text-align: center;
+  color: #1a202c; /* Darker title color */
+  font-weight: 700;
+}
+
+.description {
+  text-align: center;
+  font-size: 15px; /* Slightly larger description font */
+  color: #667085; /* Softer gray for description */
+  margin-bottom: 30px; /* More space below description */
+  line-height: 1.6;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 25px; /* More space between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px; /* More space below label */
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568; /* Darker label color */
+}
+
+input,
+textarea {
+  width: calc(100% - 22px); /* Account for padding + border */
+  padding: 12px 10px; /* Increased padding */
+  border-radius: 8px; /* Softened borders */
+  border: 1px solid #cbd5e0; /* Lighter, more modern border color */
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  color: #333;
+  background-color: #f9fbfd; /* Very light background for inputs */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4299e1; /* Enhanced focus color */
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2); /* Subtle glow on focus */
+  background-color: #ffffff;
+}
+
+textarea {
+  min-height: 140px; /* Increased min-height */
+  resize: vertical;
+}
+
+/* Button */
+.generate-button {
+  width: 100%;
+  padding: 14px; /* Larger button padding */
+  border: none;
+  border-radius: 8px; /* Softened button corners */
+  background: linear-gradient(135deg, #4299e1, #63b3ed); /* Brighter, more appealing blue gradient */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(66, 153, 225, 0.3); /* Button shadow */
+}
+
+.generate-button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(66, 153, 225, 0.4); /* Stronger shadow on hover */
+  opacity: 1; /* Ensure full opacity */
+}
+
+.generate-button:disabled {
+  background: #a0aec0; /* Softer disabled color */
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .tagline {
+    font-size: 12px;
+  }
+  .main {
+    padding: 20px 15px;
+  }
+  .invoice-card {
+    padding: 30px 20px; /* Adjusted padding for smaller screens */
+    border-radius: 10px;
+  }
+  .invoice-card .card-title {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .generate-button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+/* Google Fonts Import - Add this to your index.html OR you can put it at the very top of App.css */
+/* For a better approach, add this to your public/index.html file inside the <head> tags: */
+/* <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap)" rel="stylesheet"> */
+
