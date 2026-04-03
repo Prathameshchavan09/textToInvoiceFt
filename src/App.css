@@ -1,11 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif; /* Changed font for a modern look */
-  background: linear-gradient(135deg, #f0f2f5, #e0e6ed); /* Lighter, more subtle gradient */
-  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #f8fbff);
 }
 
-/* Layout */
 .app {
   display: flex;
   flex-direction: column;
@@ -14,32 +12,20 @@ body {
 
 /* Header */
 .header {
-  background: #1a202c; /* Darker, more sophisticated header background */
+  background: linear-gradient(135deg, #1f6fb2, #4facfe);
   color: white;
-  padding: 20px 40px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
-}
-
-.header-content {
-  max-width: 1200px;
-  margin: auto;
-  display: flex; /* Flexbox for alignment */
-  align-items: center;
-  justify-content: space-between; /* Space out if more elements are added */
+  padding: 20px;
+  text-align: center;
 }
 
 .logo {
   margin: 0;
-  font-size: 24px; /* Slightly larger logo */
-  font-weight: 700; /* Bolder */
-  letter-spacing: 0.5px;
+  font-size: 22px;
 }
 
 .tagline {
-  margin: 4px 0 0;
-  font-size: 14px;
-  opacity: 0.8;
-  font-weight: 300;
+  margin: 5px 0 0;
+  font-size: 13px;
 }
 
 /* Main */
@@ -48,5 +34,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px; /* Increased padding */
+  padding: 20px;
 }
